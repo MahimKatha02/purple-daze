@@ -12,6 +12,7 @@ import {
   Facebook,
   MessageCircle,
   ShoppingBag,
+  Users,
 } from "lucide-react";
 
 import heroCollageAsset from "@/assets/purple-daze-collage.png.asset.json";
@@ -746,7 +747,16 @@ function Contact() {
     { icon: Phone, label: "Phone", value: "01930647457", href: "tel:01930647457" },
     { icon: Facebook, label: "Facebook", value: "@purpledaze11", href: "https://www.facebook.com/purpledaze11" },
     { icon: MessageCircle, label: "WhatsApp", value: "+880 1930 647 457", href: "https://wa.me/8801930647457" },
+     {
+    icon: Users,
+    label: "Join Our Group",
+    value: "Purple Daze Community",
+    href: "https://www.facebook.com/share/g/17yuhqtKn2/",
+  },
+
   ];
+
+  
   return (
     <section id="contact" className="py-24 md:py-40" style={{ backgroundColor: "#E6DCD3" }}>
       <div className="container-luxe">
@@ -760,7 +770,7 @@ function Contact() {
           </p>
         </motion.div>
 
-        <div className="mt-16 grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+       <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-5">
           {cards.map((c, i) => (
             <motion.a
               key={c.label}
