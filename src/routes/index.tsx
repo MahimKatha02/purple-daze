@@ -23,6 +23,23 @@ import pWallets from "@/assets/product-wallets.jpg";
 import pTravel from "@/assets/product-travel.jpg";
 import pAcc from "@/assets/product-accessories.jpg";
 
+
+import sheinLogo from "@/assets/shein.jpg";
+import shopeeLogo from "@/assets/Shopee.jpg";
+import lazadaLogo from "@/assets/Lazada.jpg";
+import nikeLogo from "@/assets/Nike.jpg";
+import adidasLogo from "@/assets/Adidas - Logo.jpg";
+import uniqloLogo from "@/assets/UNIQLO logo.jpg";
+import hmLogo from "@/assets/H&M.jpg";
+import ikeaLogo from "@/assets/ikea.jpg";
+import sephoraLogo from "@/assets/Sephora Wishlist.jpg";
+import watsonsLogo from "@/assets/watsons.jpg";
+import guardianLogo from "@/assets/guardian.png";
+import zaloraLogo from "@/assets/Zalora.jpg";
+import charlesLogo from "@/assets/charles&keith.jpg";
+import victoriaLogo from "@/assets/VS.jpg";
+import bnbLogo from "@/assets/bnb.jpg";
+
 const heroCollage = heroCollageAsset.url;
 const brandLogo = brandLogoAsset.url;
 
@@ -41,13 +58,38 @@ const NAV = [
 ];
 
 const PRODUCTS = [
-  { title: "Luxury Bags", tag: "Handbags", img: pBags },
-  { title: "Perfumes", tag: "Fragrance", img: pPerfume },
-  { title: "Beauty Products", tag: "Skincare", img: pBeauty },
-  { title: "Wallets", tag: "Leather Goods", img: pWallets },
-  { title: "Travel Bags", tag: "Journey", img: pTravel },
-  { title: "Fashion Accessories", tag: "Details", img: pAcc },
+  {
+    title: "Luxury Bags",
+    tag: "Handbags",
+    img: "\luxuary-bag.jpg",
+  },
+  {
+    title: "Perfumes",
+    tag: "Fragrance",
+    img: "/perfumes.jpg",
+  },
+  {
+    title: "Beauty Products",
+    tag: "Skincare",
+    img: "/beauty.jpg",
+  },
+  {
+    title: "Wallets",
+    tag: "Leather Goods",
+    img: "/wallets.jpg",
+  },
+  {
+    title: "Travel Bags",
+    tag: "Journey",
+    img: "/travel-bag.jpg",
+  },
+  {
+    title: "Fashion Accessories",
+    tag: "Details",
+    img: "/accessories.jpg",
+  },
 ];
+
 
 const FEATURES = [
   "Authentic Products",
@@ -59,30 +101,113 @@ const FEATURES = [
 ];
 
 const STEPS = [
-  { n: "01", title: "Choose your product", body: "Browse your favourite Malaysian or international boutique." },
+  { n: "01", title: "Choose your product", body: "Browse your favorite products from our trusted partner stores below." },
   { n: "02", title: "Send us the product link", body: "Share the link via Facebook Messenger or WhatsApp." },
   { n: "03", title: "Confirm order", body: "We verify availability, price and delivery details." },
-  { n: "04", title: "Payment", body: "Securely settle payment through your preferred method." },
-  { n: "05", title: "Delivery", body: "Sit back — your parcel is on its way." },
+ {
+  n: "04",
+  title: "Booking Payment",
+  body: "Confirm your order by completing the booking payment via bKash, Nagad, or DBBL Fund Transfer."
+},
+  // { n: "05", title: "Delivery", body: "Sit back — your parcel is on its way." },
+  {
+  n: "05",
+  title: "Receive Your Order",
+  body: "Sit back and relax while we deliver your authentic products safely to your doorstep within 4–6 weeks of order confirmation."
+},
 ];
 
 const SITES = [
-  { name: "SHEIN", desc: "Trend-driven fashion & lifestyle.", url: "https://my.shein.com", mono: "S" },
-  { name: "Lazada", desc: "Everyday essentials & electronics.", url: "https://www.lazada.com.my", mono: "L" },
-  { name: "Shopee", desc: "Marketplace for everything.", url: "https://shopee.com.my", mono: "S" },
-  { name: "Victoria's Secret", desc: "Beauty, fragrance & lingerie.", url: "https://www.victoriassecretbeauty.com.my", mono: "V" },
-  { name: "Bath & Body Works", desc: "Fragrance & body care.", url: "https://www.bathandbodyworks.com.my", mono: "B" },
-  { name: "Zalora", desc: "Curated fashion & footwear.", url: "https://www.zalora.com.my", mono: "Z" },
-  { name: "H&M", desc: "Contemporary wardrobe staples.", url: "https://www2.hm.com/en_my", mono: "H" },
-  { name: "UNIQLO", desc: "Japanese lifewear essentials.", url: "https://www.uniqlo.com/my", mono: "U" },
-  { name: "Sephora", desc: "Prestige beauty destination.", url: "https://www.sephora.my", mono: "S" },
-  { name: "IKEA", desc: "Home & lifestyle furnishings.", url: "https://www.ikea.com/my", mono: "I" },
-  { name: "Adidas", desc: "Sport & performance wear.", url: "https://www.adidas.com.my", mono: "A" },
-  { name: "Nike", desc: "Athletic apparel & sneakers.", url: "https://www.nike.com/my", mono: "N" },
-  { name: "Charles & Keith", desc: "Modern accessories & shoes.", url: "https://www.charleskeith.com/my", mono: "C" },
-  { name: "Pandora", desc: "Signature jewellery & charms.", url: "https://my.pandora.net", mono: "P" },
-  { name: "Guardian", desc: "Health & personal care.", url: "https://www.guardian.com.my", mono: "G" },
-  { name: "Watsons", desc: "Beauty, health & wellness.", url: "https://www.watsons.com.my", mono: "W" },
+  {
+    name: "SHEIN",
+    desc: "Trend-driven fashion & lifestyle.",
+    url: "https://my.shein.com",
+    logo: sheinLogo,
+  },
+  {
+    name: "Shopee",
+    desc: "Marketplace for everything.",
+    url: "https://shopee.com.my",
+    logo: shopeeLogo,
+  },
+  {
+    name: "Lazada",
+    desc: "Everyday essentials & electronics.",
+    url: "https://www.lazada.com.my",
+    logo: lazadaLogo,
+  },
+  {
+    name: "Nike",
+    desc: "Athletic apparel & sneakers.",
+    url: "https://www.nike.com/my",
+    logo: nikeLogo,
+  },
+  {
+    name: "Adidas",
+    desc: "Sport & performance wear.",
+    url: "https://www.adidas.com.my",
+    logo: adidasLogo,
+  },
+  {
+    name: "UNIQLO",
+    desc: "Japanese Lifewear.",
+    url: "https://www.uniqlo.com/my",
+    logo: uniqloLogo,
+  },
+  {
+    name: "H&M",
+    desc: "Contemporary wardrobe staples.",
+    url: "https://www2.hm.com/en_my",
+    logo: hmLogo,
+  },
+  {
+    name: "IKEA",
+    desc: "Home & lifestyle furnishings.",
+    url: "https://www.ikea.com/my",
+    logo: ikeaLogo,
+  },
+  {
+    name: "Sephora",
+    desc: "Prestige beauty destination.",
+    url: "https://www.sephora.my",
+    logo: sephoraLogo,
+  },
+  {
+    name: "Watsons",
+    desc: "Beauty, health & wellness.",
+    url: "https://www.watsons.com.my",
+    logo: watsonsLogo,
+  },
+  {
+    name: "Guardian",
+    desc: "Health & personal care.",
+    url: "https://www.guardian.com.my",
+    logo: guardianLogo,
+  },
+  {
+    name: "Zalora",
+    desc: "Curated fashion & footwear.",
+    url: "https://www.zalora.com.my",
+    logo: zaloraLogo,
+  },
+  {
+    name: "Charles & Keith",
+    desc: "Modern accessories & shoes.",
+    url: "https://www.charleskeith.com/my",
+    logo: charlesLogo,
+  },
+  {
+    name: "Victoria's Secret",
+    desc: "Beauty, fragrance & lingerie.",
+    url: "https://www.victoriassecretbeauty.com.my",
+    logo: victoriaLogo,
+  },
+  {
+    name: "Bath & Body Works",
+    desc: "Body care & fragrances.",
+    url: "https://www.bathandbodyworks.com.my",
+    logo: bnbLogo,
+  },
 ];
 
 const fadeUp = {
@@ -124,16 +249,15 @@ function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 inset-x-0 z-50 transition-all duration-500 ${
-        scrolled
+      className={`fixed top-0 inset-x-0 z-50 transition-all duration-500 ${scrolled
           ? "bg-white/85 backdrop-blur-md border-b border-border/60"
           : "bg-transparent"
-      }`}
+        }`}
     >
       <div className="container-luxe flex items-center justify-between h-16 md:h-20">
         <a href="#home" className="flex items-center gap-3 group">
           <img
-            src={brandLogo}
+            src="/FB_IMG_1783421037036.jpg"
             alt="Purple Daze"
             width={40}
             height={40}
@@ -243,7 +367,7 @@ function Hero() {
 
           <div className="mt-14 grid grid-cols-3 gap-6 max-w-md">
             {[
-              { k: "16+", v: "Trusted stores" },
+              { k: "500+", v: "Repeat Customers" },
               { k: "24h", v: "Fast response" },
               { k: "100%", v: "Authentic" },
             ].map((s) => (
@@ -262,19 +386,23 @@ function Hero() {
           initial={{ opacity: 0, scale: 0.96 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1.1, ease: [0.22, 1, 0.36, 1], delay: 0.1 }}
-          className="lg:col-span-6 order-1 lg:order-2"
+          // className="lg:col-span-6 order-1 lg:order-2"
+          className="lg:col-span-6 order-1 lg:order-2 flex justify-end"
         >
           <div className="relative">
-            <div className="absolute -inset-4 md:-inset-6 bg-ivory rounded-md -z-10" />
-            <div className="overflow-hidden rounded-md aspect-[4/3] md:aspect-[16/10]">
+            <div className="absolute -inset-4 md:-inset-5 bg-ivory rounded-md -z-12" />
+      
+            <div className="overflow-hidden rounded-md aspect-[4/3] md:aspect-[18/10]">
               <img
-                src={heroCollage}
+                 src="/FB_IMG_1783421043412.jpg"
                 alt="Purple Daze curated fashion, beauty and lifestyle moodboard"
-                width={1920}
+                width={2000}
                 height={1080}
                 className="w-full h-full object-cover transition-transform duration-[1800ms] ease-out hover:scale-[1.03]"
               />
-            </div>
+            </div> 
+
+
             <div className="hidden md:flex absolute -bottom-6 -left-6 bg-white border border-border px-5 py-4 rounded-sm items-center gap-3">
               <ShoppingBag size={16} className="text-coffee" />
               <div>
@@ -465,9 +593,13 @@ function Websites() {
               className="group relative bg-white border border-transparent rounded-sm p-6 flex flex-col gap-4 transition-all duration-500 hover:-translate-y-1 hover:border-coffee/20"
             >
               <div className="flex items-start justify-between">
-                <div className="h-12 w-12 rounded-sm bg-ivory grid place-items-center">
-                  <span className="font-display text-xl text-black">{s.mono}</span>
-                </div>
+               <div className="h-14 w-20 flex items-center justify-center rounded-md bg-white border border-border p-2">
+  <img
+    src={s.logo}
+    alt={s.name}
+    className="max-h-10 max-w-full object-contain"
+  />
+</div>
                 <ArrowUpRight
                   size={16}
                   className="text-coffee/50 transition-all duration-500 group-hover:text-black group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
@@ -674,7 +806,13 @@ function Footer() {
     <footer className="bg-white border-t border-border">
       <div className="container-luxe py-14 md:py-20 flex flex-col md:flex-row md:items-end justify-between gap-10">
         <div className="flex items-start gap-4">
-          <img src={brandLogo} alt="Purple Daze" width={48} height={48} className="h-12 w-12 rounded-full object-cover" />
+          <img
+            src="/FB_IMG_1783421037036.jpg"
+            alt="Purple Daze"
+            width={48}
+            height={48}
+            className="h-12 w-12 rounded-full object-cover"
+          />
           <div>
             <div className="font-display text-2xl text-black">
               Purple <span className="italic">Daze</span>
