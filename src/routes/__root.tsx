@@ -93,6 +93,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:type", content: "website" },
       { property: "og:site_name", content: "Purple Daze" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Purple Daze | Luxury Fashion & Lifestyle Shopping" },
+      { name: "description", content: "Shop authentic fashion accessories, beauty products, handbags and lifestyle essentials from Malaysia's leading brands through Purple Daze." },
+      { property: "og:description", content: "Shop authentic fashion accessories, beauty products, handbags and lifestyle essentials from Malaysia's leading brands through Purple Daze." },
+      { name: "twitter:description", content: "Shop authentic fashion accessories, beauty products, handbags and lifestyle essentials from Malaysia's leading brands through Purple Daze." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/03d8316c-6773-4ee6-ba1a-0dba0a046224/id-preview-f904ade0--2332726a-7b91-4dc6-809e-cb95f00333ca.lovable.app-1783419721561.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/03d8316c-6773-4ee6-ba1a-0dba0a046224/id-preview-f904ade0--2332726a-7b91-4dc6-809e-cb95f00333ca.lovable.app-1783419721561.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
