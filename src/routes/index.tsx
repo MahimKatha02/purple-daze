@@ -131,8 +131,15 @@ function Navbar() {
       }`}
     >
       <div className="container-luxe flex items-center justify-between h-16 md:h-20">
-        <a href="#home" className="flex items-center gap-2 group">
-          <span className="font-display text-xl md:text-2xl tracking-tight text-black">
+        <a href="#home" className="flex items-center gap-3 group">
+          <img
+            src={brandLogo}
+            alt="Purple Daze"
+            width={40}
+            height={40}
+            className="h-9 w-9 md:h-10 md:w-10 rounded-full object-cover"
+          />
+          <span className="hidden sm:inline font-display text-lg md:text-xl tracking-tight text-black">
             Purple <span className="italic">Daze</span>
           </span>
         </a>
