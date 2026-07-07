@@ -673,7 +673,6 @@ function Footer() {
   return (
     <footer className="bg-white border-t border-border">
       <div className="container-luxe py-14 md:py-20 flex flex-col md:flex-row md:items-end justify-between gap-10">
-        <div>
         <div className="flex items-start gap-4">
           <img src={brandLogo} alt="Purple Daze" width={48} height={48} className="h-12 w-12 rounded-full object-cover" />
           <div>
