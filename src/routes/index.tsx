@@ -266,13 +266,13 @@ function Hero() {
         >
           <div className="relative">
             <div className="absolute -inset-4 md:-inset-6 bg-ivory rounded-md -z-10" />
-            <div className="overflow-hidden rounded-md">
+            <div className="overflow-hidden rounded-md aspect-[4/3] md:aspect-[16/10]">
               <img
                 src={heroCollage}
-                alt="Luxury fashion accessories flat lay by Purple Daze"
-                width={1200}
-                height={1400}
-                className="w-full h-auto object-cover transition-transform duration-[1800ms] ease-out hover:scale-[1.03]"
+                alt="Purple Daze curated fashion, beauty and lifestyle moodboard"
+                width={1920}
+                height={1080}
+                className="w-full h-full object-cover transition-transform duration-[1800ms] ease-out hover:scale-[1.03]"
               />
             </div>
             <div className="hidden md:flex absolute -bottom-6 -left-6 bg-white border border-border px-5 py-4 rounded-sm items-center gap-3">
@@ -674,12 +674,16 @@ function Footer() {
     <footer className="bg-white border-t border-border">
       <div className="container-luxe py-14 md:py-20 flex flex-col md:flex-row md:items-end justify-between gap-10">
         <div>
-          <div className="font-display text-2xl text-black">
-            Purple <span className="italic">Daze</span>
+        <div className="flex items-start gap-4">
+          <img src={brandLogo} alt="Purple Daze" width={48} height={48} className="h-12 w-12 rounded-full object-cover" />
+          <div>
+            <div className="font-display text-2xl text-black">
+              Purple <span className="italic">Daze</span>
+            </div>
+            <p className="mt-3 text-xs text-coffee/70 max-w-xs leading-relaxed">
+              Curated fashion, beauty and lifestyle — delivered with care.
+            </p>
           </div>
-          <p className="mt-3 text-xs text-coffee/70 max-w-xs leading-relaxed">
-            Curated fashion, beauty and lifestyle — delivered with care.
-          </p>
         </div>
         <nav className="flex flex-wrap gap-x-8 gap-y-3">
           {links.map((l) => (
