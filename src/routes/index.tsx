@@ -14,13 +14,17 @@ import {
   ShoppingBag,
 } from "lucide-react";
 
-import heroCollage from "@/assets/hero-collage.jpg";
+import heroCollageAsset from "@/assets/purple-daze-collage.png.asset.json";
+import brandLogoAsset from "@/assets/purple-daze-logo.png.asset.json";
 import pBags from "@/assets/product-bags.jpg";
 import pPerfume from "@/assets/product-perfume.jpg";
 import pBeauty from "@/assets/product-beauty.jpg";
 import pWallets from "@/assets/product-wallets.jpg";
 import pTravel from "@/assets/product-travel.jpg";
 import pAcc from "@/assets/product-accessories.jpg";
+
+const heroCollage = heroCollageAsset.url;
+const brandLogo = brandLogoAsset.url;
 
 export const Route = createFileRoute("/")({
   component: Index,
