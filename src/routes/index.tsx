@@ -248,55 +248,55 @@ const PRODUCTS = [
     img: pTotes,
   },
   {
-  title: "Handbags",
-  tag: "Women's Bags",
-  img: pHandbag,
-},
-{
-  title: "Modest Wear",
-  tag: "Modest Fashion",
-  img: pModestWear,
-},
-{
-  title: "Party Wear",
-  tag: "Evening Collection",
-  img: pPartyWear,
-},
-{
-  title: "Dresses",
-  tag: "Women's Fashion",
-  img: pDresses,
-},
-{
-  title: "Vacation Wear",
-  tag: "Resort Collection",
-  img: pVacationWear,
-},
-{
-  title: "Seamless Lingerie",
-  tag: "Everyday Comfort",
-  img: pSeamlessLingerie,
-},
-{
-  title: "Fancy Lingerie",
-  tag: "Luxury Intimates",
-  img: pFancyLingerie,
-},
-{
-  title: "Skincare",
-  tag: "Beauty Essentials",
-  img: pSkincare,
-},
-{
-  title: "Bodycare",
-  tag: "Body Essentials",
-  img: pBodycare,
-},
-{
-  title: "Haircare",
-  tag: "Hair Essentials",
-  img: pHaircare,
-},
+    title: "Handbags",
+    tag: "Women's Bags",
+    img: pHandbag,
+  },
+  {
+    title: "Modest Wear",
+    tag: "Modest Fashion",
+    img: pModestWear,
+  },
+  {
+    title: "Party Wear",
+    tag: "Evening Collection",
+    img: pPartyWear,
+  },
+  {
+    title: "Dresses",
+    tag: "Women's Fashion",
+    img: pDresses,
+  },
+  {
+    title: "Vacation Wear",
+    tag: "Resort Collection",
+    img: pVacationWear,
+  },
+  {
+    title: "Seamless Lingerie",
+    tag: "Everyday Comfort",
+    img: pSeamlessLingerie,
+  },
+  {
+    title: "Fancy Lingerie",
+    tag: "Luxury Intimates",
+    img: pFancyLingerie,
+  },
+  {
+    title: "Skincare",
+    tag: "Beauty Essentials",
+    img: pSkincare,
+  },
+  {
+    title: "Bodycare",
+    tag: "Body Essentials",
+    img: pBodycare,
+  },
+  {
+    title: "Haircare",
+    tag: "Hair Essentials",
+    img: pHaircare,
+  },
 ];
 
 
@@ -313,17 +313,17 @@ const STEPS = [
   { n: "01", title: "Choose your product", body: "Browse your favorite products from our trusted partner stores below." },
   { n: "02", title: "Send us the product link", body: "Share the link via Facebook Messenger or WhatsApp." },
   { n: "03", title: "Confirm order", body: "We verify availability, price and delivery details." },
- {
-  n: "04",
-  title: "Booking Payment",
-  body: "Confirm your order by completing the booking payment via bKash, Nagad, or DBBL Fund Transfer."
-},
+  {
+    n: "04",
+    title: "Booking Payment",
+    body: "Confirm your order by completing the booking payment via bKash, Nagad, or DBBL Fund Transfer."
+  },
   // { n: "05", title: "Delivery", body: "Sit back — your parcel is on its way." },
   {
-  n: "05",
-  title: "Receive Your Order",
-  body: "Sit back and relax while we deliver your authentic products safely to your doorstep within 4–6 weeks of order confirmation."
-},
+    n: "05",
+    title: "Receive Your Order",
+    body: "Sit back and relax while we deliver your authentic products safely to your doorstep within 4–6 weeks of order confirmation."
+  },
 ];
 
 const SITES = [
@@ -459,8 +459,8 @@ function Navbar() {
   return (
     <header
       className={`fixed top-0 inset-x-0 z-50 transition-all duration-500 ${scrolled
-          ? "bg-white/85 backdrop-blur-md border-b border-border/60"
-          : "bg-transparent"
+        ? "bg-white/85 backdrop-blur-md border-b border-border/60"
+        : "bg-transparent"
         }`}
     >
       <div className="container-luxe flex items-center justify-between h-16 md:h-20">
@@ -600,16 +600,16 @@ function Hero() {
         >
           <div className="relative">
             <div className="absolute -inset-4 md:-inset-5 bg-ivory rounded-md -z-12" />
-      
+
             <div className="overflow-hidden rounded-md aspect-[4/3] md:aspect-[18/10]">
               <img
-                 src="/FB_IMG_1783421043412.jpg"
+                src="/FB_IMG_1783421043412.jpg"
                 alt="Purple Daze curated fashion, beauty and lifestyle moodboard"
                 width={2000}
                 height={1080}
                 className="w-full h-full object-cover transition-transform duration-[1800ms] ease-out hover:scale-[1.03]"
               />
-            </div> 
+            </div>
 
 
             <div className="hidden md:flex absolute -bottom-6 -left-6 bg-white border border-border px-5 py-4 rounded-sm items-center gap-3">
@@ -651,8 +651,16 @@ function Collections() {
               rel="noopener noreferrer"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-60px" }}
+              // viewport={{ once: true, margin: "-60px" }}
+              // viewport={{ once: true, margin: "0px 0px -120px 0px" }}
+
+              viewport={{
+                once: true,
+                amount: 0.15,
+              }}
+
               transition={{ duration: 0.7, delay: i * 0.06, ease: [0.22, 1, 0.36, 1] }}
+              
               className="group block"
             >
               <div className="overflow-hidden rounded-sm bg-ivory aspect-[4/5]">
@@ -802,13 +810,13 @@ function Websites() {
               className="group relative bg-white border border-transparent rounded-sm p-6 flex flex-col gap-4 transition-all duration-500 hover:-translate-y-1 hover:border-coffee/20"
             >
               <div className="flex items-start justify-between">
-               <div className="h-14 w-20 flex items-center justify-center rounded-md bg-white border border-border p-2">
-  <img
-    src={s.logo}
-    alt={s.name}
-    className="max-h-10 max-w-full object-contain"
-  />
-</div>
+                <div className="h-14 w-20 flex items-center justify-center rounded-md bg-white border border-border p-2">
+                  <img
+                    src={s.logo}
+                    alt={s.name}
+                    className="max-h-10 max-w-full object-contain"
+                  />
+                </div>
                 <ArrowUpRight
                   size={16}
                   className="text-coffee/50 transition-all duration-500 group-hover:text-black group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
@@ -955,16 +963,16 @@ function Contact() {
     { icon: Phone, label: "Phone", value: "01930647457", href: "tel:01930647457" },
     { icon: Facebook, label: "Facebook", value: "@purpledaze11", href: "https://www.facebook.com/purpledaze11" },
     { icon: MessageCircle, label: "WhatsApp", value: "+880 1930 647 457", href: "https://wa.me/8801930647457" },
-     {
-    icon: Users,
-    label: "Join Our Group",
-    value: "Purple Daze Community",
-    href: "https://www.facebook.com/share/g/17yuhqtKn2/",
-  },
+    {
+      icon: Users,
+      label: "Join Our Group",
+      value: "Purple Daze Community",
+      href: "https://www.facebook.com/share/g/17yuhqtKn2/",
+    },
 
   ];
 
-  
+
   return (
     <section id="contact" className="py-24 md:py-40" style={{ backgroundColor: "#E6DCD3" }}>
       <div className="container-luxe">
@@ -978,7 +986,7 @@ function Contact() {
           </p>
         </motion.div>
 
-       <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-5">
+        <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-5">
           {cards.map((c, i) => (
             <motion.a
               key={c.label}
