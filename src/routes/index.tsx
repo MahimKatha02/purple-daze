@@ -15,14 +15,136 @@ import {
   Users,
 } from "lucide-react";
 
+// import heroCollageAsset from "@/assets/purple-daze-collage.png.asset.json";
+// import brandLogoAsset from "@/assets/purple-daze-logo.png.asset.json";
+
+
+// import pBags from "@/assets/product-bags.jpg";
+// import pPerfume from "@/assets/product-perfume.jpg";
+// import pBeauty from "@/assets/product-beauty.jpg";
+// import pWallets from "@/assets/product-wallets.jpg";
+// import pTravel from "@/assets/product-travel.jpg";
+// import pAcc from "@/assets/product-accessories.jpg";
+
+
+// import sheinLogo from "@/assets/shein.jpg";
+// import shopeeLogo from "@/assets/Shopee.jpg";
+// import lazadaLogo from "@/assets/Lazada.jpg";
+// import nikeLogo from "@/assets/Nike.jpg";
+// import adidasLogo from "@/assets/Adidas - Logo.jpg";
+// import uniqloLogo from "@/assets/UNIQLO logo.jpg";
+// import hmLogo from "@/assets/H&M.jpg";
+// import ikeaLogo from "@/assets/ikea.jpg";
+// import sephoraLogo from "@/assets/Sephora Wishlist.jpg";
+// import watsonsLogo from "@/assets/watsons.jpg";
+// import guardianLogo from "@/assets/guardian.png";
+// import zaloraLogo from "@/assets/Zalora.jpg";
+// import charlesLogo from "@/assets/charles&keith.jpg";
+// import victoriaLogo from "@/assets/VS.jpg";
+// import bnbLogo from "@/assets/bnb.jpg";
+
+// const heroCollage = heroCollageAsset.url;
+// const brandLogo = brandLogoAsset.url;
+
+export const Route = createFileRoute("/")({
+  component: Index,
+});
+
+const NAV = [
+  { label: "Home", href: "#home" },
+  { label: "About", href: "#about" },
+  { label: "Collections", href: "#collections" },
+  { label: "Order", href: "#order" },
+  { label: "Shopping Websites", href: "#websites" },
+  { label: "Contact", href: "#contact" },
+  { label: "Facebook", href: "https://www.facebook.com/purpledaze11", external: true },
+];
+
+// const PRODUCTS = [
+//   {
+//     title: "Luxury Bags",
+//     tag: "Handbags",
+//     img: "\luxuary-bag.jpg",
+//   },
+//   {
+//     title: "Perfumes",
+//     tag: "Fragrance",
+//     img: "/perfumes.jpg",
+//   },
+//   {
+//     title: "Beauty Products",
+//     tag: "Skincare",
+//     img: "/beauty.jpg",
+//   },
+//   {
+//     title: "Wallets",
+//     tag: "Leather Goods",
+//     img: "/wallets.jpg",
+//   },
+//   {
+//     title: "Travel Bags",
+//     tag: "Journey",
+//     img: "/travel-bag.jpg",
+//   },
+//   {
+//     title: "Fashion Accessories",
+//     tag: "Details",
+//     img: "/accessories.jpg",
+//   },
+// ];
+
+
 import heroCollageAsset from "@/assets/purple-daze-collage.png.asset.json";
 import brandLogoAsset from "@/assets/purple-daze-logo.png.asset.json";
-import pBags from "@/assets/product-bags.jpg";
-import pPerfume from "@/assets/product-perfume.jpg";
-import pBeauty from "@/assets/product-beauty.jpg";
-import pWallets from "@/assets/product-wallets.jpg";
-import pTravel from "@/assets/product-travel.jpg";
-import pAcc from "@/assets/product-accessories.jpg";
+
+// import pPerfume from "@/assets/product-perfume.jpg";
+// import pBeauty from "@/assets/product-beauty.jpg";
+// import pWallets from "@/assets/product-wallets.jpg";
+// import pTravel from "@/assets/product-travel.jpg";
+// import pAcc from "@/assets/product-accessories.jpg";
+
+// import pBags from "@/assets/handbags.jpg";
+// import pHeels from "@/assets/heels.jpg";
+// import pMakeupBrushes from "@/assets/makeup_brushes.jpg";
+// import pCorsets from "@/assets/corsets.jpg";
+// import pSkirts from "@/assets/skirts.jpg";
+// import pBlouses from "@/assets/blouses.jpg";
+// import pSweatshirts from "@/assets/sweatshirts.jpg";
+// import pStockings from "@/assets/stockings.jpg";
+// import pFormals from "@/assets/formals.jpg";
+// import pPants from "@/assets/pants.jpg";
+// import pTotes from "@/assets/totes.jpg";
+
+
+import pBags from "@/assets/luxuary-bag.jpg";
+import pHandbag from "@/assets/handbags.jpg";
+import pPerfume from "@/assets/perfumes.jpg";
+import pBeauty from "@/assets/beauty.jpg";
+import pWallets from "@/assets/wallets.jpg";
+import pTravel from "@/assets/travel-bag.jpg";
+import pAcc from "@/assets/accessories.jpg";
+
+import pHeels from "@/assets/heels.jpg";
+import pMakeupBrushes from "@/assets/makeup_brushes.jpg";
+import pCorsets from "@/assets/corsets.jpg";
+import pSkirts from "@/assets/skirts.jpg";
+import pBlouses from "@/assets/blouses.jpg";
+import pSweatshirts from "@/assets/sweatshirts.jpg";
+import pStockings from "@/assets/stockings.jpg";
+import pFormals from "@/assets/formals.jpg";
+import pPants from "@/assets/pants.jpg";
+import pTotes from "@/assets/totes.jpg";
+
+
+import pModestWear from "@/assets/modest.jpg";
+import pPartyWear from "@/assets/party.jpg";
+import pDresses from "@/assets/dresses.jpg";
+import pVacationWear from "@/assets/vacation.jpg";
+import pSeamlessLingerie from "@/assets/seameless.jpg";
+import pFancyLingerie from "@/assets/lingerie.jpg";
+import pSkincare from "@/assets/skincare.jpg";
+import pBodycare from "@/assets/bodycare.jpg";
+import pHaircare from "@/assets/haircare.jpg";
 
 
 import sheinLogo from "@/assets/shein.jpg";
@@ -44,51 +166,137 @@ import bnbLogo from "@/assets/bnb.jpg";
 const heroCollage = heroCollageAsset.url;
 const brandLogo = brandLogoAsset.url;
 
-export const Route = createFileRoute("/")({
-  component: Index,
-});
-
-const NAV = [
-  { label: "Home", href: "#home" },
-  { label: "About", href: "#about" },
-  { label: "Collections", href: "#collections" },
-  { label: "Order", href: "#order" },
-  { label: "Shopping Websites", href: "#websites" },
-  { label: "Contact", href: "#contact" },
-  { label: "Facebook", href: "https://www.facebook.com/purpledaze11", external: true },
-];
-
 const PRODUCTS = [
   {
     title: "Luxury Bags",
     tag: "Handbags",
-    img: "\luxuary-bag.jpg",
+    img: pBags,
   },
   {
     title: "Perfumes",
     tag: "Fragrance",
-    img: "/perfumes.jpg",
+    img: pPerfume,
   },
   {
     title: "Beauty Products",
     tag: "Skincare",
-    img: "/beauty.jpg",
+    img: pBeauty,
   },
   {
     title: "Wallets",
     tag: "Leather Goods",
-    img: "/wallets.jpg",
+    img: pWallets,
   },
   {
     title: "Travel Bags",
     tag: "Journey",
-    img: "/travel-bag.jpg",
+    img: pTravel,
   },
   {
     title: "Fashion Accessories",
     tag: "Details",
-    img: "/accessories.jpg",
+    img: pAcc,
   },
+  {
+    title: "Heels",
+    tag: "Footwear",
+    img: pHeels,
+  },
+  {
+    title: "Makeup Brushes",
+    tag: "Beauty Tools",
+    img: pMakeupBrushes,
+  },
+  {
+    title: "Corsets",
+    tag: "Women's Fashion",
+    img: pCorsets,
+  },
+  {
+    title: "Skirts",
+    tag: "Women's Wear",
+    img: pSkirts,
+  },
+  {
+    title: "Blouses",
+    tag: "Women's Tops",
+    img: pBlouses,
+  },
+  {
+    title: "Sweatshirts",
+    tag: "Casual Wear",
+    img: pSweatshirts,
+  },
+  {
+    title: "Stockings",
+    tag: "Fashion Essentials",
+    img: pStockings,
+  },
+  {
+    title: "Formal Wear",
+    tag: "Elegant Style",
+    img: pFormals,
+  },
+  {
+    title: "Pants",
+    tag: "Bottom Wear",
+    img: pPants,
+  },
+  {
+    title: "Tote Bags",
+    tag: "Everyday Carry",
+    img: pTotes,
+  },
+  {
+  title: "Handbags",
+  tag: "Women's Bags",
+  img: pHandbag,
+},
+{
+  title: "Modest Wear",
+  tag: "Modest Fashion",
+  img: pModestWear,
+},
+{
+  title: "Party Wear",
+  tag: "Evening Collection",
+  img: pPartyWear,
+},
+{
+  title: "Dresses",
+  tag: "Women's Fashion",
+  img: pDresses,
+},
+{
+  title: "Vacation Wear",
+  tag: "Resort Collection",
+  img: pVacationWear,
+},
+{
+  title: "Seamless Lingerie",
+  tag: "Everyday Comfort",
+  img: pSeamlessLingerie,
+},
+{
+  title: "Fancy Lingerie",
+  tag: "Luxury Intimates",
+  img: pFancyLingerie,
+},
+{
+  title: "Skincare",
+  tag: "Beauty Essentials",
+  img: pSkincare,
+},
+{
+  title: "Bodycare",
+  tag: "Body Essentials",
+  img: pBodycare,
+},
+{
+  title: "Haircare",
+  tag: "Hair Essentials",
+  img: pHaircare,
+},
 ];
 
 
